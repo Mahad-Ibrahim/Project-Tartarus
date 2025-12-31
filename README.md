@@ -12,6 +12,8 @@ Note: This project was made for educational and research purposes only, attempti
 
 ![Language](https://img.shields.io/badge/Language-C%20%2F%20x64_Assembly-blue) ![Platform](https://img.shields.io/badge/Platform-Windows-0078D6) ![Technique](https://img.shields.io/badge/Technique-Direct_Syscalls-red)
 
+The source code for this is inside `main.c`.
+
 ### 1. The PEB Walk
 
 To avoid calling functions that might be monitored by antivirus software (AV/EDR), the loader does the following steps instead of using standard APIs:
@@ -86,6 +88,8 @@ Using the **Tartarus Gate** technique described above, the beacon dynamically fi
 
 ![Language](https://img.shields.io/badge/Language-MASM_x64-red) ![Platform](https://img.shields.io/badge/Platform-Windows-0078D6) ![Technique](https://img.shields.io/badge/Technique-Shellcode_Style-yellow)
 
+The source code for this is inside `httpRequestSenderShellcode.asm`.
+
 This is a pure x64 Assembly program that sends an HTTP POST request. It is a Proof-of-Concept (PoC) that shows how to use Windows APIs (`WinINet`) without using standard imports or the `.data` section.
 
 It works like **shellcode**: it finds system DLLs and functions manually while the program is running.
@@ -128,9 +132,6 @@ Open the **x64 Native Tools Command Prompt** and run these commands:
 ```cmd
 ml64.exe <FILENAME>.asm /link /entry:main /subsystem:console /defaultlib:kernel32.lib
 ```
-
-## Incomplete
-The code is still slightly incomplete and needs refinement, as well as build and testing instructions.
 
 # DISCLAIMER
 This software is provided for educational purposes only. It demonstrates operating system internals and modern evasion techniques. The author is not responsible for any misuse of this code. Do not use this on systems you do not own or have explicit permission to test.
