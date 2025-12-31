@@ -126,11 +126,7 @@ This code uses **MASM (Microsoft Macro Assembler)**.
 Open the **x64 Native Tools Command Prompt** and run these commands:
 
 ```cmd
-:: Assemble the code
-ml64.exe /c /Cp main.asm
-
-:: Link to executable
-link.exe /SUBSYSTEM:CONSOLE /ENTRY:main /LARGEADDRESSAWARE main.obj
+ml64.exe <FILENAME>.asm /link /entry:main /subsystem:console /defaultlib:kernel32.lib
 ```
 
 ## Incomplete
