@@ -9,6 +9,13 @@ The complete project—including the multi-hop C2 infrastructure, persistence me
 
 I am happy to provide access to the full private repository or a walkthrough of the complete architecture upon request for interview and verification purposes. Please contact me directly to arrange access.
 
+## Complete System Architecture
+The following diagram illustrates the execution flow of the Tartarus Gate engine, from initial PEB walking to final syscall execution and C2 communication.
+
+![Tartarus Architecture](./tartarus-architecture-v1.jpg)
+
+*Figure 1: High-level execution flow of the implant engine and network stager.*
+
 # Proof of Concept
 A PoC x64 Windows implant that makes an HTTP POST request using direct syscalls and manual [PEB](https://learn.microsoft.com/en-us/windows/win32/api/winternl/ns-winternl-peb) walking. Made to bypass user-mode API hooks by EDR/AV.
 
