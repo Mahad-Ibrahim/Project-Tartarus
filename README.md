@@ -1,4 +1,4 @@
-####Project Status: Complete APT Simulation
+#### Project Status: Complete APT Simulation
 
 While this repository hosts the source code for the core Implant Engine (Tartarus Gate) and the Assembly Network Stager, these are individual components of a larger, fully integrated Advanced Persistent Threat (APT) simulation.
 
