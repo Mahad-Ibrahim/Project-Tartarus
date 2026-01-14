@@ -1,3 +1,11 @@
+####Project Status: Complete APT Simulation
+
+While this repository hosts the source code for the core Implant Engine (Tartarus Gate) and the Assembly Network Stager, these are individual components of a larger, fully integrated Advanced Persistent Threat (APT) simulation.
+
+The complete project—including the multi-hop C2 infrastructure, persistence mechanisms, and logic integration—is fully functional and complete. However, due to the sensitive nature of the code and the potential for misuse, the full source code is hosted in a private repository.
+
+I am happy to provide access to the full private repository or a walkthrough of the complete architecture upon request for interview and verification purposes. Please contact me directly to arrange access.
+
 # Win64 Syscall Beacon (PoC)
 A PoC x64 Windows implant that makes an HTTP POST request using direct syscalls and manual [PEB](https://learn.microsoft.com/en-us/windows/win32/api/winternl/ns-winternl-peb) walking. Made to bypass user-mode API hooks by EDR/AV.
 
